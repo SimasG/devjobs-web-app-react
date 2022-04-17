@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   background-image: url("./assets/desktop/bg-pattern-header.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 16.2rem;
+  width: 100vw;
   .header-subcontainer {
     width: 111rem;
     padding: 4rem 0 5rem 0;
