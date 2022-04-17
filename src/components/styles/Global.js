@@ -54,19 +54,20 @@ h4 {
     font-family: 'Kumbh Sans', sans-serif;    
 }
 
-p, span {
+span {
     font-size: 1.6rem;
     line-height: 2.6rem;
     font-weight: 400;
-    color: ${(props) => props.theme.colors.gray2}
-    font-family: 'Kumbh Sans', sans-serif;    
+    color: ${(props) => props.theme.colors.secondary.gray2};
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
-code {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+li, p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: 400;
-    color: ${(props) => props.theme.colors.black4}
+    color: ${(props) => props.theme.colors.secondary.darkGray};
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 input {
@@ -74,7 +75,6 @@ input {
 }
 
 ul, li, button {
-    font-weight: bold;
     cursor: pointer;
 }
 `;
