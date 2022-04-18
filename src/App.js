@@ -1,8 +1,8 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/styles/Global";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-// import Main from "./components/Main";
+import Main from "./components/Main";
 import JobPage from "./components/JobPage";
 
 const theme = {
@@ -24,18 +24,23 @@ const theme = {
 
 function App() {
   return (
-    <Router>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<JobPage />}></Route>
-        </Routes>
-        {/* <Routes>
-          <Route exact path="/" element={<Main />}></Route>
-        </Routes> */}
-      </ThemeProvider>
-    </Router>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />}>
+          <Route path="company/:job" element={<JobPage />} />
+        </Route>
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
+    </ThemeProvider>
   );
 }
 

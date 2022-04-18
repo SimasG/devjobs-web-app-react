@@ -31,6 +31,7 @@ h1 {
     font-weight: 700;
     line-height: 3.4rem;
     font-family: 'Kumbh Sans', sans-serif;    
+    color: ${(props) => props.theme.colors.primary.veryDarkBlue}
 }
 
 h2 {
@@ -45,7 +46,8 @@ h3 {
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.4rem;
-    font-family: 'Kumbh Sans', sans-serif;    
+    font-family: 'Kumbh Sans', sans-serif;  
+    color: ${(props) => props.theme.colors.primary.veryDarkBlue}  
 }
 
 h4 {
