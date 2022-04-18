@@ -22,7 +22,7 @@ body {
 }
 
 h1, h2, h3, h4, p, li, ul, span, a, button {
-    list-style-type: none;
+    /* list-style-type: none; */
     text-decoration: none;
 }
 
@@ -38,6 +38,7 @@ h2 {
     font-weight: 700;
     line-height: 2.9rem;
     font-family: 'Kumbh Sans', sans-serif;    
+    color: ${(props) => props.theme.colors.primary.veryDarkBlue}
 }
 
 h3 {
@@ -76,6 +77,19 @@ input {
 
 ul, li, button {
     cursor: pointer;
+}
+
+ul {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    color: ${(props) => props.theme.colors.secondary.darkGray};
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+a {
+    font-family: 'Kumbh Sans', sans-serif;    
+    color: ${(props) => props.theme.colors.secondary.darkGray};
 }
 `;
 

@@ -1,7 +1,9 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/styles/Global";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Main from "./components/Main";
+// import Main from "./components/Main";
+import JobPage from "./components/JobPage";
 
 const theme = {
   colors: {
@@ -22,11 +24,18 @@ const theme = {
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Header />
-      <Main />
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<JobPage />}></Route>
+        </Routes>
+        {/* <Routes>
+          <Route exact path="/" element={<Main />}></Route>
+        </Routes> */}
+      </ThemeProvider>
+    </Router>
   );
 }
 
