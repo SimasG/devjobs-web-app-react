@@ -74,7 +74,10 @@ li, p {
 }
 
 input {
-    font-family: 'Kumbh Sans', sans-serif;    
+    font-family: 'Kumbh Sans', sans-serif;   
+    outline: none;
+    color: #8c8f96;
+    font-size: 1.6rem;
 }
 
 ul, li, button {
