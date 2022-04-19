@@ -40,8 +40,10 @@ const JobPages = ({ searchParams, fulltime }) => {
                 <p className="posted-at">{job.postedAt}</p>
                 <li className="contract">{job.contract}</li>
               </div>
-              <h3 className="position">{job.position}</h3>
-              <p className="company-title">{job.company}</p>
+              <div>
+                <h3 className="position">{job.position}</h3>
+                <p className="company-title">{job.company}</p>
+              </div>
               <p className="location">{job.location}</p>
             </StyledJobPreview>
           </Link>

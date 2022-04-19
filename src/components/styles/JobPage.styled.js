@@ -31,7 +31,9 @@ export const StyledJobPage = styled.main`
       justify-content: center;
       align-items: start;
       gap: 1rem;
-      margin-left: -26.7rem;
+      justify-self: flex-start;
+      margin-left: 2rem;
+      margin-right: auto;
       .company-url {
         font-size: 1.6rem;
       }

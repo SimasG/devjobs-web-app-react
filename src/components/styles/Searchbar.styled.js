@@ -19,7 +19,7 @@ export const StyledSearchbar = styled.section`
       gap: 1.5rem;
       flex-grow: 4;
       .search-input {
-        width: 25rem;
+        width: 28rem;
         ::placeholder {
           color: #8c8f96;
         }

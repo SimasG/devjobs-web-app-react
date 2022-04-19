@@ -16,7 +16,6 @@ const JobPage = () => {
   // because every URL param is a string.
   const jobPage = getJobPage(parseInt(params.id));
 
-  console.log(params);
   return (
     <>
       <StyledJobPage className="job-page-container">

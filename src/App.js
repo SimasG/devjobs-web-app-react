@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/styles/Global";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Homepage from "./components/Main";
+import Homepage from "./components/Homepage";
 import JobPage from "./components/JobPage";
 
 const theme = {
