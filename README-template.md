@@ -18,6 +18,6 @@ Small fixes:
 
 Filtering
 
-1. Input search filter (use React Router tut)
-2. Location filter (use locations from data.json & adapt the React Router tut)
+1. Input search filter (use React Router tut) -> DONE
+2. Location filter (use React Router tut)
 3. Full time checkbox filter (adapt React Router tut)
